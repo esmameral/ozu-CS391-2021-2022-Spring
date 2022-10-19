@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ozyegin University</title>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+    <form method="get" action="success.html" id="registerForm" name="registerForm">
+
+        <input type="text" name="fistName" placeholder="First Name" id="fname" required size="20" minlength="2" maxlength="10">
+        <br />
+        <input type="text" name="lastName" placeholder="Last Name" id="lname" required>
+        <br />
+        <textarea name="address" rows="10" cols="30" id="address"></textarea>
+        <br />
+        <select>
+            <option value="34">Istanbul</option>
+            <option value="35">Izmir</option>
+            <option value="23">Elazig</option>
+            <option value="81">Duzce</option>
+            <option value="06" selected>Ankara</option>
+            <option value="58">Sivas</option>
+
+        </select>
+        <br />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" id="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <br />
+        <input type="date" name="birthday" required>
+        <br />
+        <input type="email" name="email" placeholder="Email address"  required>
+        <br />
+        <input type="password" name="password" placeholder="password"  required>
+        <br />
+        <input type="submit" name="Submit"  value="Register Me (1)">
+        <button type="submit" name="Submit">Register Me (2)</button>
+        <button type="button" name="Submit" onclick="alert('Hello')" >Only Button</button>
+    </form>
+
+</body>
+
+</html>
